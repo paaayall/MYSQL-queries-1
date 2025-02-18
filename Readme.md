@@ -11,6 +11,8 @@ This project contains SQL queries written to solve specific questions.
 
 ## 📜 SQL Queries Based on Questions
 
+## Question 1:
+
 **Question:** :Retrieve the total number of orders placed.
 
 **Solution:**
@@ -21,6 +23,8 @@ select count(order_id) as total_orders from orders;
 
 **Output:**
 ![Query1 Output](Output/q1-output.png)
+
+## Question 2:
 
 **Question:** Calculate the total revenue generated from pizza sales.
 
@@ -38,6 +42,8 @@ FROM
 
 **Output:**
 ![Query2 Output](Output/q2-output.png)
+
+## Question 3:
 
 **Question:** Identify the highest-priced pizza.
 
@@ -57,6 +63,8 @@ LIMIT 1;
 **Output:**
 ![Query3 Output](Output/q3-output.png)
 
+## Question 4:
+
 **Question:** Identify the most common pizza size ordered.
 
 **Solution:**
@@ -75,6 +83,8 @@ ORDER BY order_count DESC;
 
 **Output:**
 ![Query4 Output](Output/q4-output.png)
+
+## Question 5:
 
 **Question:** List the top 5 most ordered pizza types along with their quantities.
 
@@ -98,6 +108,8 @@ LIMIT 5;
 **Output:**
 ![Query5 Output](Output/q5-output.png)
 
+## Question 6:
+
 **Question:** Join the necessary tables to find the total quantity of each pizza category ordered.
 
 **Solution:**
@@ -119,6 +131,8 @@ ORDER BY quantity DESC;
 **Output:**
 ![Query6 Output](Output/q6-output.png)
 
+## Question 7:
+
 **Question:** Determine the distribution of orders by hour of the day.
 
 **Solution:**
@@ -134,6 +148,8 @@ GROUP BY HOUR(order_time);
 **Output:**
 ![Query7 Output](Output/q7-output.png)
 
+## Question 8:
+
 **Question:** Join relevant tables to find the category-wise distribution of pizzas.
 
 **Solution:**
@@ -148,6 +164,8 @@ GROUP BY category
 
 **Output:**
 ![Query8 Output](Output/q8-output.png)
+
+## Question 9:
 
 **Question:** Group the orders by date and calculate the average number of pizzas ordered per day.
 
@@ -167,6 +185,8 @@ FROM
 
 **Output:**
 ![Query9 Output](Output/q9-output.png)
+
+## Question 10:
 
 **Question:** : Determine the top 3 most ordered pizza types based on revenue.
 
@@ -188,6 +208,8 @@ LIMIT 3;
 
 **Output:**
 ![Query10 Output](Output/q10-output.png)
+
+## Question 11:
 
 **Question:**  Calculate the percentage contribution of each pizza type to total revenue.
 
@@ -217,6 +239,8 @@ ORDER BY revenue DESC;
 **Output:**
 ![Query11 Output](Output/q11-output.png)
 
+## Question 12:
+
 **Question:** Analyze the cumulative revenue generated over time.
 
 **Solution:**
@@ -236,6 +260,8 @@ group by orders.order_date) as sales;
 
 **Output:**
 ![Query12 Output](Output/q12-output.png)
+
+## Question 13:
 
 **Question:** Determine the top 3 most ordered pizza types based on revenue for each pizza category.
 
